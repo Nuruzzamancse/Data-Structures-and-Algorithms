@@ -1,6 +1,8 @@
 .idea
 *.exe
 *.os
+Binary Search/*.o
+Binary Search/*.exe
 Series In Recursion/*.o
 Series In Recursion/*.exe
 Mixed Recursion/*.o
