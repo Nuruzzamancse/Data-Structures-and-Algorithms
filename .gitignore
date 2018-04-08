@@ -1,0 +1,8 @@
+.idea
+*.exe
+*.os
+Series In Recursion/*.o
+Series In Recursion/*.exe
+Mixed Recursion/*.o
+Mixed Recursion/*.exe
+Flood Fill/*.o
