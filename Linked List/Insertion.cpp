@@ -33,6 +33,29 @@ void append(int roll)
 
 
 }
+void delete_node(int roll)
+{
+    node *current_node = root;
+    node *previous_node = NULL;
+
+    while(current_node->roll!=roll)
+    {
+        previous_node = current_node;
+        current_node = current_node->next;
+    }
+    if(current_node==root)
+    {
+        node *temp = root;
+        root = root->next;
+        delete(temp);
+    }
+    else{
+        previous_node->next = current_node;
+        delete(current_node);
+    }
+
+
+}
 void print()
 {
     node *current_node = root;
@@ -50,6 +73,11 @@ int main(){
     append(6);
 
     print();
+
+    delete_node(1);
+
+    print();
+
 
     return 0;
 }
